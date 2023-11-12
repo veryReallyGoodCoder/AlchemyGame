@@ -6,8 +6,11 @@ public class VideoPlayer : MonoBehaviour
 {
 
     private VideoPlayer vidPlayer;
-    
+
+    [Header("Basic Animations")]
     public VideoClip idleClip;
+
+
     public VideoClip oasisClip;
     public VideoClip villageClip;
 
@@ -15,12 +18,6 @@ public class VideoPlayer : MonoBehaviour
     private void Awake()
     {
         vidPlayer = GetComponent<VideoPlayer>();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
