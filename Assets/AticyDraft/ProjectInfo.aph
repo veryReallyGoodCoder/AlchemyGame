@@ -1,0 +1,19 @@
+<ProjectInfo Version="1">
+  <Signature>0B28714313A3058B9E898BCA158C6CC1C26825E316DE294D1002FC82CB0095AC</Signature>
+  <Content>
+    <Project Guid="10ca2190-cbac-489d-b7f3-3f9d414d0b87">
+      <DisplayName Value="AlchemyJam"/>
+      <DetailName Value=""/>
+      <MainProjectGuid Value="734a40e5-62d9-43d1-a562-246619e0995c"/>
+      <IconType Value="0"/>
+      <IdProjectIcon Value="00000000-0000-0000-0000-000000000000"/>
+      <ScmProviderGuid Value="0745c2ee-abe3-451b-934e-7f597f56c0d7"/>
+      <ScmConfiguration Value=""/>
+      <CreationTimeStamp Value="638353219922196231"/>
+      <PartitionHash Value="1548935EEDF2977A4D3DCC2F5ACBA9E297C9DC84BF60DDCF28A7D94D91CC40FC"/>
+      <SaveFileVersion Value="56"/>
+      <ProjectType Value="0"/>
+      <IsOnlineProject Value="False"/>
+    </Project>
+  </Content>
+</ProjectInfo>
