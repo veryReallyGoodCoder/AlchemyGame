@@ -1,24 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
+using Articy.Unity;
+using Articy.Unity.Interfaces;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueChoices : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Branch branch;
+    private ArticyFlowPlayer flowPlayer;
+
+    [SerializeField] private Text buttonText;
+
+    public void AssignBranch(ArticyFlowPlayer player, Branch branch)
     {
-        
+        this.flowPlayer = player;
+        this.branch = branch;
+
+        IFlowObject target = branch.Target;
+
+        buttonText.text = string.Empty;
+
+        var objectWithMenuText = target as IObjectWithMenuText;
+
+        if(objectWithMenuText != null)
+        {
+            buttonText.text = objectWithMenuText.MenuText;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AssignCont(ArticyFlowPlayer player, Branch branch)
     {
-        
+        this.flowPlayer = player;
+        this.branch = branch;
+
+        buttonText.text = "Continue";
     }
 
-    public void AssignCont()
+    public void BranchSelect()
     {
-
+        flowPlayer.Play(branch);
     }
-
+   
 }
